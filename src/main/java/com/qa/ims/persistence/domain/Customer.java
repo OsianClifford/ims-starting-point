@@ -5,22 +5,16 @@ public class Customer {
 	private Long id;
 	private String firstName;
 	private String surname;
-	private String _username;
-	private String _password;
 
 	public Customer(String firstName, String surname) {
 		this.firstName = firstName;
 		this.surname = surname;
-		this._username = _username;
-		this._password = _password;
 	}
 
 	public Customer(Long id, String firstName, String surname) {
 		this.id = id;
 		this.firstName = firstName;
 		this.surname = surname;
-		this._username = _username;
-		this._password = _password;
 	}
 
 	public Long getId() {
@@ -47,22 +41,6 @@ public class Customer {
 		this.surname = surname;
 	}
 
-	/*public String getUsername() {
-		return username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}*/
-
 	public String toString() {
 		return "id:" + id + " first name:" + firstName + " surname:" + surname;
 	}
@@ -74,8 +52,6 @@ public class Customer {
 		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((surname == null) ? 0 : surname.hashCode());
-		result = prime * result + ((_username == null) ? 0 : _username.hashCode());
-		result = prime * result + ((_password == null) ? 0 : _password.hashCode());
 		return result;
 	}
 

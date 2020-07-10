@@ -8,6 +8,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import com.qa.ims.persistence.domain.Customer;
 import org.apache.log4j.Logger;
 
 import com.qa.ims.controller.Action;
@@ -34,27 +35,30 @@ public class Ims {
 		Domain.printDomains();
 
 		Domain domain = Domain.getDomain();
-		LOGGER.info("What would you like to do with " + domain.name().toLowerCase() + ":");
+		Action action = null;
+		do{
 
-		Action.printActions();
-		Action action = Action.getAction();
+			LOGGER.info("What would you like to do with " + domain.name().toLowerCase() + ":");
+			Action.printActions();
+			action = Action.getAction();
 
-		switch (domain) {
-		case CUSTOMER:
-			CustomerController customerController = new CustomerController(
-					new CustomerServices(new CustomerDaoMysql(username, password)));
-			doAction(customerController, action);
-			break;
-		case ITEM:
-			break;
-		case ORDER:
-			break;
-		case STOP:
-			break;
-		default:
-			break;
-		}
 
+			switch (domain) {
+				case CUSTOMER:
+					CustomerController customerController = new CustomerController(new CustomerServices
+							(new CustomerDaoMysql(username, password)));
+					doAction(customerController, action);
+					break;
+				case ITEM:
+					break;
+				case ORDER:
+					break;
+				case STOP:
+					break;
+				default:
+					break;
+			}
+		}while(action != Action.RETURN);
 	}
 
 	public void doAction(CrudController<?> crudController, Action action) {
