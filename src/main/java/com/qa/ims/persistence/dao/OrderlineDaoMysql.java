@@ -38,7 +38,8 @@ public class OrderlineDaoMysql implements Dao<Orderline> {
 		Long customerID = resultSet.getLong("customer_id");
 		Long itemID = resultSet.getLong("item_id");
 		Long orderID = resultSet.getLong("order_id");
-		return new Orderline(id, customerID, itemID, orderID);
+		Double orderValue = resultSet.getDouble("order_value");
+		return new Orderline(id, customerID, itemID, orderID, orderValue);
 	}
 
 	/**
@@ -85,8 +86,8 @@ public class OrderlineDaoMysql implements Dao<Orderline> {
 	public Orderline create(Orderline orderline) {
 		try (Connection connection = DriverManager.getConnection(jdbcConnectionUrl, username, password);
 				Statement statement = connection.createStatement();) {
-			statement.executeUpdate("insert into orderline(customer_id, item_id, order_id) values('" + orderline.getCustomerID()
-					+ "','" + orderline.getItemID() + "','" + orderline.getOrderID() + "')");
+			statement.executeUpdate("insert into orderline(customer_id, item_id, order_id, order_value) values('" + orderline.getCustomerID()
+					+ "','" + orderline.getItemID() + "','" + orderline.getOrderID() + "','" + orderline.getOrderValue() + "')" );
 			return readLatest();
 		} catch (Exception e) {
 			LOGGER.debug(e.getStackTrace());
@@ -120,7 +121,8 @@ public class OrderlineDaoMysql implements Dao<Orderline> {
 		try (Connection connection = DriverManager.getConnection(jdbcConnectionUrl, username, password);
 				Statement statement = connection.createStatement();) {
 			statement.executeUpdate("update orderline set customer_id ='" + orderline.getCustomerID() + "', item_id ='"
-					+ orderline.getItemID() + "', order_id ='" + orderline.getOrderID());
+					+ orderline.getItemID() + "', order_id ='" + orderline.getOrderID() + "', order_value ='"
+					+ orderline.getOrderValue());
 			return readOrderline(orderline.getId());
 		} catch (Exception e) {
 			LOGGER.debug(e.getStackTrace());

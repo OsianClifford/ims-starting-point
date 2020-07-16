@@ -2,24 +2,27 @@ package com.qa.ims.persistence.domain;
 
 public class Orderline {
 
-	private static Long id;
-	private static Long customerID;
-	private static Long itemID;
-	private static Long orderID;
+	private Long id;
+	private Long customerID;
+	private Long itemID;
+	private Long orderID;
+	private Double orderValue;
 
-	public Orderline(Long customerID, Long itemID, Long orderID) {
+	public Orderline(Long customerID, Long itemID, Long orderID, Double orderValue) {
 		this.customerID = customerID;
 		this.itemID = itemID;
 		this.orderID = orderID;
+		this.orderValue = orderValue;
 	}
 
-	public Orderline(Long id, Long customerID, Long itemID, Long orderID) {
+	public Orderline(Long id, Long customerID, Long itemID, Long orderID, Double orderValue) {
 		this.id = id;
 		this.customerID = customerID;
 		this.itemID = itemID;
 		this.orderID = orderID;
+		this.orderValue = orderValue;
 	}
-	public static Long getId() {return id;}
+	public Long getId() {return id;}
 
 	public void setId(Long id) {
 		this.id = id;
@@ -47,8 +50,16 @@ public class Orderline {
 		this.orderID = orderID;
 	}
 
+	public Double getOrderValue() {
+		return orderValue;
+	}
+
+	public void setOrderValue(Double orderValue) {
+		this.orderValue = orderValue;
+	}
+
 	public String toString() {return "id:" + id + " customerID:" + customerID + " ItemID:" +
-			itemID + " orderID:" + orderID;}
+			itemID + " orderID:" + orderID + " orderValue:" + orderValue;}
 
 	@Override
 	public int hashCode() {
@@ -58,6 +69,7 @@ public class Orderline {
 		result = prime * result + ((customerID == null) ? 0 : customerID.hashCode());
 		result = prime * result + ((itemID == null) ? 0 : itemID.hashCode());
 		result = prime * result + ((orderID == null) ? 0 : orderID.hashCode());
+		result = prime * result + ((orderValue == null) ? 0 : orderValue.hashCode());
 		return result;
 	}
 
@@ -93,6 +105,12 @@ public class Orderline {
 			if (other.orderID != null)
 				return false;
 		} else if (!orderID.equals(other.orderID))
+			return false;
+
+		if (orderValue == null) {
+			if (other.orderValue != null)
+				return false;
+		} else if (!orderValue.equals(other.orderValue))
 			return false;
 
 		return true;

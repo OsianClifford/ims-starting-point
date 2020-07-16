@@ -33,7 +33,7 @@ public class CustomerDaoMysql implements Dao<Customer> {
 		this.password = password;
 	}
 
-	Customer customerFromResultSet(ResultSet resultSet) throws SQLException {
+	private Customer customerFromResultSet(ResultSet resultSet) throws SQLException {
 		Long id = resultSet.getLong("customer_id");
 		String firstName = resultSet.getString("first_name");
 		String surname = resultSet.getString("last_name");
@@ -52,13 +52,16 @@ public class CustomerDaoMysql implements Dao<Customer> {
 				ResultSet resultSet = statement.executeQuery("select * from customers");) {
 			ArrayList<Customer> customers = new ArrayList<>();
 			while (resultSet.next()) {
-				customers.add(customerFromResultSet(resultSet));
+				Customer customer = customerFromResultSet(resultSet);
+				customers.add(customer);
+				System.out.println(customer);
 			}
 			return customers;
 		} catch (SQLException e) {
 			LOGGER.debug(e.getStackTrace());
 			LOGGER.error(e.getMessage());
 		}
+
 		return new ArrayList<>();
 	}
 
@@ -118,7 +121,7 @@ public class CustomerDaoMysql implements Dao<Customer> {
 	public Customer update(Customer customer) {
 		try (Connection connection = DriverManager.getConnection(jdbcConnectionUrl, username, password);
 				Statement statement = connection.createStatement();) {
-			statement.executeUpdate("update customers set first_name ='" + customer.getFirstName() + "', surname ='"
+			statement.executeUpdate("update customers set first_name ='" + customer.getFirstName() + "', last_name ='"
 					+ customer.getSurname() + "' where customer_id =" + customer.getId());
 			return readCustomer(customer.getId());
 		} catch (Exception e) {

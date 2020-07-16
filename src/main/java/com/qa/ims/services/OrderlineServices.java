@@ -17,15 +17,14 @@ public class OrderlineServices implements CrudServices<Orderline> {
 		return orderlineDao.readAll();
 	}
 
-	public Orderline create(Orderline order) {
+	public Orderline create(Orderline orderline) {
 		return orderlineDao.create(orderline);
 	}
 
-	public Orderline update(Orderline order) {
+	public Orderline update(Orderline orderline) {
 		return orderlineDao.update(orderline);
 	}
 
-	public void delete(Long id) {
-		orderlineDao.delete(id);
+	public void delete(Long id) {orderlineDao.delete(id);
 	}
 }

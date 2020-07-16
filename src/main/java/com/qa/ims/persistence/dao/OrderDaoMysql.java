@@ -37,10 +37,10 @@ public class OrderDaoMysql implements Dao<Order> {
 	Order orderFromResultSet(ResultSet resultSet) throws SQLException {
 		Long id = resultSet.getLong("order_id");
 		Long customerID = resultSet.getLong("customer_id");
-		Long itemID = resultSet.getLong("item_id");
+		//Long itemID = resultSet.getLong("item_id");
 		String orderDate = resultSet.getString("order_date");
-		Double orderValue = resultSet.getDouble("order_value");
-		return new Order(id, customerID, itemID, orderDate, orderValue);
+		//Double orderValue = resultSet.getDouble("order_value");
+		return new Order(id, customerID, orderDate);
 	}
 
 	/**
@@ -87,8 +87,8 @@ public class OrderDaoMysql implements Dao<Order> {
 	public Order create(Order order) {
 		try (Connection connection = DriverManager.getConnection(jdbcConnectionUrl, username, password);
 				Statement statement = connection.createStatement();) {
-			statement.executeUpdate("insert into orders(customer_id, item_id, order_date, order_value) values('" + order.getCustomerId()
-					+ "','" + order.getItemId() + "','" + order.getOrderDate() + "','" + order.getOrderValue() + "')");
+			statement.executeUpdate("insert into orders(customer_id, order_date) values('" + order.getCustomerId()
+					+ "','" + order.getOrderDate() + "')");
 			return readLatest();
 		} catch (Exception e) {
 			LOGGER.debug(e.getStackTrace());
@@ -121,9 +121,8 @@ public class OrderDaoMysql implements Dao<Order> {
 	public Order update(Order order) {
 		try (Connection connection = DriverManager.getConnection(jdbcConnectionUrl, username, password);
 				Statement statement = connection.createStatement();) {
-			statement.executeUpdate("update orders set customer_id ='" + order.getCustomerId() + "', item_id ='"
-					+ order.getItemId() + "', order_date ='" + order.getOrderDate() + "', order_value ='" +
-					order.getOrderValue() + "' where order_id =" + order.getId());
+			statement.executeUpdate("update orders set customer_id ='" + order.getCustomerId() + "', order_date ='"
+					+ order.getOrderDate() + "' where order_id =" + order.getId());
 			return readOrder(order.getId());
 		} catch (Exception e) {
 			LOGGER.debug(e.getStackTrace());

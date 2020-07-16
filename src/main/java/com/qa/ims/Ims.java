@@ -45,8 +45,7 @@ public class Ims {
 		Domain.printDomains();
 		domain = Domain.getDomain();
 
-		while(true){
-			action = null;
+		action = null;
 			do{
 
 				LOGGER.info("What would you like to do with " + domain.name().toLowerCase() + ":");
@@ -71,12 +70,12 @@ public class Ims {
 						doAction(orderController, action);
 						break;
 					case STOP:
+						System.exit(0);
 						break;
 					default:
 						break;
 				}
 			}while(action != Action.RETURN);
-		}
 	}
 
 

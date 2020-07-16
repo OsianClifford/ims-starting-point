@@ -28,6 +28,9 @@ public class ItemController implements CrudController<Item>{
 		return Utils.getInput();
 	}
 
+	Long getLongInput() {
+		return Utils.getLongInput();
+	}
 	Double getDoubleInput() {
 		return Utils.getDoubleInput();
 	}
@@ -80,7 +83,7 @@ public class ItemController implements CrudController<Item>{
 	@Override
 	public void delete() {
 		LOGGER.info("Please enter the id of the item you would like to delete");
-		Long id = Long.valueOf(getInput());
+		Long id = Long.valueOf(getLongInput());
 		itemService.delete(id);
 	}
 	

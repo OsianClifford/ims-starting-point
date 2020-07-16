@@ -2,9 +2,9 @@ package com.qa.ims.persistence.domain;
 
 public class Customer {
 
-	private static Long id;
-	private static String firstName;
-	private static String surname;
+	private Long id;
+	private String firstName;
+	private String surname;
 
 	public Customer(String firstName, String surname) {
 		this.firstName = firstName;
@@ -17,7 +17,7 @@ public class Customer {
 		this.surname = surname;
 	}
 
-	public static Long getId() {return id;}
+	public Long getId() {return id;}
 
 	public void setId(Long id) {
 		this.id = id;
@@ -39,9 +39,7 @@ public class Customer {
 		this.surname = surname;
 	}
 
-	public String toString() {
-		return "id:" + id + " first name:" + firstName + " surname:" + surname;
-	}
+	public String toString() {return "id:" + id + " first name:" + firstName + " last name:" + surname;}
 
 	@Override
 	public int hashCode() {
