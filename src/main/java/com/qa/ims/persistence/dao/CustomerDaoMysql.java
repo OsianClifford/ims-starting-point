@@ -52,9 +52,7 @@ public class CustomerDaoMysql implements Dao<Customer> {
 				ResultSet resultSet = statement.executeQuery("select * from customers");) {
 			ArrayList<Customer> customers = new ArrayList<>();
 			while (resultSet.next()) {
-				Customer customer = customerFromResultSet(resultSet);
-				customers.add(customer);
-				System.out.println(customer);
+				customers.add(customerFromResultSet(resultSet));
 			}
 			return customers;
 		} catch (SQLException e) {

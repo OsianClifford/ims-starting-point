@@ -1,68 +1,53 @@
 Coverage: 34%
 # Project Title
 
-One Paragraph of project description goes here
+The task here was to create an interactive database with use of Mysql and Junit to test it.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+1. Clone and pull this repositry into a new folder or downlaod as a zip and unpack.
+2. use a programming IDE to load up and build the Ims.java found in Fundamental Project Specification (IMS)\ims-starting-point\src\main\java\com\qa\ims
+3. From there you can look at the source code and build the project and try it out.
+4. all extra and supporting documents are found in the root folder.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+An IDE of your choice. I use "IntelliJ" myself or you could use something similar like "Eclipse"
+You will also need Java version 14 or above to build and compiled the code.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+1. Depending on your choice of IDE, you first need to install one in order to open and build and compile the code in this project.
+2. You need to clone and pull this repositry (https://github.com/OsianClifford/ims-starting-point), prefably using Git Bash.
+3. You can then follow the steps found in Getting Started found above to unpack or to get started.
+4. To add to this list and give extra details, You could also open the project structure which will then appear in your project viewer.
+5. you are done. If you find ims.java and other java files then you are in the right place.
+6. You can build the code by pressing the "Run" button at the top of your IDE (depending on your IDE) or you could go to Build > Run.
+7. You will also need to setup a MySql local instance database using the file named "ims database" found in the root file. This file has all the required MySql statements required to build the database and access it.
+8. From here you can then fully interact with the database through java.
 
 ## Running the tests
 
-Explain how to run the automated tests for this system. Break down into which tests and what they do
+To run the automated tests you can find them in src/test/testcom.qa.ims
 
-### Unit Tests 
+You can run each one by right clicking on each one and selecting "Run"
 
-Explain what these tests test, why and how to run them
+####Controller Folder/Package
+CustomerControllerTest - This tests the controller functionality of CustomerControllerTest.java
+ItemControllerTest - This tests the controller functionality of ItemControllerTest.java
 
-```
-Give an example
-```
+####Persistence Folder/Package
 
-### Integration Tests 
-Explain what these tests test, why and how to run them
+#####Dao Folder/Package
+CustomerDaoMysqlTest - This tests the functionality interaction between the java and the MySql database of CustomerDaoMysql.java
 
-```
-Give an example
-```
+#####Domain Folder/Package
+CustomerTest - This tests the functionality of the customer domain and the setters and getters that store the values of customers.
+DomainTest - This tests the functionality of the main Domain that sets up the other domains that use it's functionality.
+ItemTest - This tests the functionality of the item domain and the setters and getters that store the values of items.
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+####Controller Folder/Package
+CustomerServicesTest - This tests the functionality of the customer services that is used by the domain and the main runner.
 
 ## Built With
 

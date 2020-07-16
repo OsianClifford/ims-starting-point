@@ -36,7 +36,7 @@ public class OrderDaoMysql implements Dao<Order> {
 
 	Order orderFromResultSet(ResultSet resultSet) throws SQLException {
 		Long id = resultSet.getLong("order_id");
-		Long customerID = resultSet.getLong("customer_id");
+		Long customerID = resultSet.getLong("fk_customer_id");
 		//Long itemID = resultSet.getLong("item_id");
 		String orderDate = resultSet.getString("order_date");
 		//Double orderValue = resultSet.getDouble("order_value");
@@ -87,7 +87,7 @@ public class OrderDaoMysql implements Dao<Order> {
 	public Order create(Order order) {
 		try (Connection connection = DriverManager.getConnection(jdbcConnectionUrl, username, password);
 				Statement statement = connection.createStatement();) {
-			statement.executeUpdate("insert into orders(customer_id, order_date) values('" + order.getCustomerId()
+			statement.executeUpdate("insert into orders(fk_customer_id, order_date) values('" + order.getCustomerId()
 					+ "','" + order.getOrderDate() + "')");
 			return readLatest();
 		} catch (Exception e) {

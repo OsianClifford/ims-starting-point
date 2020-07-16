@@ -35,9 +35,9 @@ public class OrderlineDaoMysql implements Dao<Orderline> {
 
 	Orderline orderlineFromResultSet(ResultSet resultSet) throws SQLException {
 		Long id = resultSet.getLong("orderline_id");
-		Long customerID = resultSet.getLong("customer_id");
-		Long itemID = resultSet.getLong("item_id");
-		Long orderID = resultSet.getLong("order_id");
+		Long customerID = resultSet.getLong("fk_customer_id");
+		Long itemID = resultSet.getLong("fk_item_id");
+		Long orderID = resultSet.getLong("fk_order_id");
 		Double orderValue = resultSet.getDouble("order_value");
 		return new Orderline(id, customerID, itemID, orderID, orderValue);
 	}
@@ -86,7 +86,7 @@ public class OrderlineDaoMysql implements Dao<Orderline> {
 	public Orderline create(Orderline orderline) {
 		try (Connection connection = DriverManager.getConnection(jdbcConnectionUrl, username, password);
 				Statement statement = connection.createStatement();) {
-			statement.executeUpdate("insert into orderline(customer_id, item_id, order_id, order_value) values('" + orderline.getCustomerID()
+			statement.executeUpdate("insert into orderline(fk_customer_id, fk_item_id, fk_order_id, order_value) values('" + orderline.getCustomerID()
 					+ "','" + orderline.getItemID() + "','" + orderline.getOrderID() + "','" + orderline.getOrderValue() + "')" );
 			return readLatest();
 		} catch (Exception e) {
@@ -120,8 +120,8 @@ public class OrderlineDaoMysql implements Dao<Orderline> {
 	public Orderline update(Orderline orderline) {
 		try (Connection connection = DriverManager.getConnection(jdbcConnectionUrl, username, password);
 				Statement statement = connection.createStatement();) {
-			statement.executeUpdate("update orderline set customer_id ='" + orderline.getCustomerID() + "', item_id ='"
-					+ orderline.getItemID() + "', order_id ='" + orderline.getOrderID() + "', order_value ='"
+			statement.executeUpdate("update orderline set fk_customer_id ='" + orderline.getCustomerID() + "', fk_item_id ='"
+					+ orderline.getItemID() + "', fk_order_id ='" + orderline.getOrderID() + "', order_value ='"
 					+ orderline.getOrderValue());
 			return readOrderline(orderline.getId());
 		} catch (Exception e) {

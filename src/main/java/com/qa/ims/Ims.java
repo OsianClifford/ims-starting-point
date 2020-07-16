@@ -46,12 +46,11 @@ public class Ims {
 		domain = Domain.getDomain();
 
 		action = null;
-			do{
-
+		while(true) {
+			do {
 				LOGGER.info("What would you like to do with " + domain.name().toLowerCase() + ":");
 				Action.printActions();
 				action = Action.getAction();
-
 
 				switch (domain) {
 					case CUSTOMER:
@@ -75,7 +74,8 @@ public class Ims {
 					default:
 						break;
 				}
-			}while(action != Action.RETURN);
+			} while (action != Action.RETURN);
+		}
 	}
 
 

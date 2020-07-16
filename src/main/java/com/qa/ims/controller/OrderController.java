@@ -3,6 +3,7 @@ package com.qa.ims.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.qa.ims.persistence.domain.Customer;
 import com.qa.ims.persistence.domain.Domain;
 import com.qa.ims.persistence.domain.Order;
 import org.apache.log4j.Logger;
@@ -31,9 +32,7 @@ public class OrderController implements CrudController<Order>{
 	Long getLongInput() {
 		return Utils.getLongInput();
 	}
-	Double getDoubleInput() {
-		return Utils.getDoubleInput();
-	}
+	//Double getDoubleInput() {return Utils.getDoubleInput();}
 
 	/**
 	 * Reads all orders to the logger
