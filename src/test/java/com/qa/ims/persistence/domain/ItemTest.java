@@ -45,12 +45,12 @@ public class ItemTest {
 		assertFalse(item.equals(new Object()));
 	}
 	
-	@Test
-	public void createItemWithId() {
-		assertEquals(1L, item.getId(), 0);
-		assertEquals("item1", item.getItemName());
-		assertEquals("10.0", item.getItemValue());
-	}
+//	@Test
+//	public void createItemWithId() {
+//		assertEquals(1L, item.getId(), 0);
+//		assertEquals("item1", item.getItemName());
+//		assertEquals("10.0", item.getItemValue());
+//	}
 	
 	@Test
 	public void checkEquality() {

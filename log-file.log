@@ -13,3 +13,233 @@
 2020-07-17 11:06:48 INFO  Action:42 - DELETE: To remove an item from the database
 2020-07-17 11:06:48 INFO  Action:42 - RETURN: To return to domain selection
 2020-07-17 11:10:58 INFO  Ims:37 - What is your username
+2020-07-17 11:26:14 INFO  Ims:37 - What is your username
+2020-07-17 11:26:19 INFO  Ims:39 - What is your password
+2020-07-17 11:26:22 INFO  Ims:44 - Which entity would you like to use?
+2020-07-17 11:26:22 INFO  Domain:29 - CUSTOMER: Information about customers
+2020-07-17 11:26:22 INFO  Domain:29 - ITEM: Individual Items
+2020-07-17 11:26:22 INFO  Domain:29 - ORDER: Purchases of items
+2020-07-17 11:26:22 INFO  Domain:29 - SHIPMENT: Shipment of items
+2020-07-17 11:26:22 INFO  Domain:29 - STOP: To close the application
+2020-07-17 11:26:25 INFO  Ims:51 - What would you like to do with customer:
+2020-07-17 11:26:25 INFO  Action:42 - CREATE: To save a new item into the database
+2020-07-17 11:26:25 INFO  Action:42 - READ: To read an item from the database
+2020-07-17 11:26:25 INFO  Action:42 - UPDATE: To change an item already in the database
+2020-07-17 11:26:25 INFO  Action:42 - DELETE: To remove an item from the database
+2020-07-17 11:26:25 INFO  Action:42 - RETURN: To return to domain selection
+2020-07-17 11:26:28 INFO  Ims:51 - What would you like to do with customer:
+2020-07-17 11:26:28 INFO  Action:42 - CREATE: To save a new item into the database
+2020-07-17 11:26:28 INFO  Action:42 - READ: To read an item from the database
+2020-07-17 11:26:28 INFO  Action:42 - UPDATE: To change an item already in the database
+2020-07-17 11:26:28 INFO  Action:42 - DELETE: To remove an item from the database
+2020-07-17 11:26:28 INFO  Action:42 - RETURN: To return to domain selection
+2020-07-17 11:26:35 INFO  CustomerController:47 - Please enter a first name
+2020-07-17 11:26:37 INFO  CustomerController:49 - Please enter a last name
+2020-07-17 11:27:35 INFO  Ims:37 - What is your username
+2020-07-17 11:27:38 INFO  Ims:39 - What is your password
+2020-07-17 11:27:41 INFO  Ims:44 - Which entity would you like to use?
+2020-07-17 11:27:41 INFO  Domain:29 - CUSTOMER: Information about customers
+2020-07-17 11:27:41 INFO  Domain:29 - ITEM: Individual Items
+2020-07-17 11:27:41 INFO  Domain:29 - ORDER: Purchases of items
+2020-07-17 11:27:41 INFO  Domain:29 - SHIPMENT: Shipment of items
+2020-07-17 11:27:41 INFO  Domain:29 - STOP: To close the application
+2020-07-17 11:27:46 INFO  Ims:51 - What would you like to do with customer:
+2020-07-17 11:27:46 INFO  Action:42 - CREATE: To save a new item into the database
+2020-07-17 11:27:46 INFO  Action:42 - READ: To read an item from the database
+2020-07-17 11:27:46 INFO  Action:42 - UPDATE: To change an item already in the database
+2020-07-17 11:27:46 INFO  Action:42 - DELETE: To remove an item from the database
+2020-07-17 11:27:46 INFO  Action:42 - RETURN: To return to domain selection
+2020-07-17 11:27:47 INFO  Ims:51 - What would you like to do with customer:
+2020-07-17 11:27:47 INFO  Action:42 - CREATE: To save a new item into the database
+2020-07-17 11:27:47 INFO  Action:42 - READ: To read an item from the database
+2020-07-17 11:27:47 INFO  Action:42 - UPDATE: To change an item already in the database
+2020-07-17 11:27:47 INFO  Action:42 - DELETE: To remove an item from the database
+2020-07-17 11:27:47 INFO  Action:42 - RETURN: To return to domain selection
+2020-07-17 11:27:52 INFO  CustomerController:47 - Please enter a first name
+2020-07-17 11:27:54 INFO  CustomerController:49 - Please enter a last name
+2020-07-17 11:27:56 INFO  CustomerController:52 - Customer created
+2020-07-17 11:27:56 INFO  Ims:51 - What would you like to do with customer:
+2020-07-17 11:27:56 INFO  Action:42 - CREATE: To save a new item into the database
+2020-07-17 11:27:56 INFO  Action:42 - READ: To read an item from the database
+2020-07-17 11:27:56 INFO  Action:42 - UPDATE: To change an item already in the database
+2020-07-17 11:27:56 INFO  Action:42 - DELETE: To remove an item from the database
+2020-07-17 11:27:56 INFO  Action:42 - RETURN: To return to domain selection
+2020-07-17 11:27:58 INFO  CustomerController:37 - id:1 first name:riki last name:maru
+2020-07-17 11:27:58 INFO  Ims:51 - What would you like to do with customer:
+2020-07-17 11:27:58 INFO  Action:42 - CREATE: To save a new item into the database
+2020-07-17 11:27:58 INFO  Action:42 - READ: To read an item from the database
+2020-07-17 11:27:58 INFO  Action:42 - UPDATE: To change an item already in the database
+2020-07-17 11:27:58 INFO  Action:42 - DELETE: To remove an item from the database
+2020-07-17 11:27:58 INFO  Action:42 - RETURN: To return to domain selection
+2020-07-17 11:28:03 INFO  CustomerController:47 - Please enter a first name
+2020-07-17 11:28:05 INFO  CustomerController:49 - Please enter a last name
+2020-07-17 11:28:07 INFO  CustomerController:52 - Customer created
+2020-07-17 11:28:07 INFO  Ims:51 - What would you like to do with customer:
+2020-07-17 11:28:07 INFO  Action:42 - CREATE: To save a new item into the database
+2020-07-17 11:28:07 INFO  Action:42 - READ: To read an item from the database
+2020-07-17 11:28:07 INFO  Action:42 - UPDATE: To change an item already in the database
+2020-07-17 11:28:07 INFO  Action:42 - DELETE: To remove an item from the database
+2020-07-17 11:28:07 INFO  Action:42 - RETURN: To return to domain selection
+2020-07-17 11:28:08 INFO  CustomerController:37 - id:1 first name:riki last name:maru
+2020-07-17 11:28:08 INFO  CustomerController:37 - id:2 first name:john last name:doe
+2020-07-17 11:28:08 INFO  Ims:51 - What would you like to do with customer:
+2020-07-17 11:28:08 INFO  Action:42 - CREATE: To save a new item into the database
+2020-07-17 11:28:08 INFO  Action:42 - READ: To read an item from the database
+2020-07-17 11:28:08 INFO  Action:42 - UPDATE: To change an item already in the database
+2020-07-17 11:28:08 INFO  Action:42 - DELETE: To remove an item from the database
+2020-07-17 11:28:08 INFO  Action:42 - RETURN: To return to domain selection
+2020-07-17 13:00:50 INFO  CustomerController:37 - id:1 first name:Chris last name:P
+2020-07-17 13:00:50 INFO  CustomerController:37 - id:2 first name:Rhys last name:T
+2020-07-17 13:00:50 INFO  CustomerController:37 - id:3 first name:Nic last name:J
+2020-07-17 13:00:50 INFO  CustomerController:62 - Please enter the id of the customer you would like to update
+2020-07-17 13:00:50 INFO  CustomerController:64 - Please enter a first name
+2020-07-17 13:00:50 INFO  CustomerController:66 - Please enter a last name
+2020-07-17 13:00:50 INFO  CustomerController:69 - Customer Updated
+2020-07-17 13:00:50 INFO  CustomerController:47 - Please enter a first name
+2020-07-17 13:00:50 INFO  CustomerController:49 - Please enter a last name
+2020-07-17 13:00:50 INFO  CustomerController:52 - Customer created
+2020-07-17 13:00:50 INFO  CustomerController:78 - Please enter the id of the customer you would like to delete
+2020-07-17 13:00:50 INFO  ItemController:45 - id:1 item name:item1 item value:10.0
+2020-07-17 13:00:50 INFO  ItemController:45 - id:2 item name:item2 item value:2.0
+2020-07-17 13:00:50 INFO  ItemController:45 - id:3 item name:item3 item value:5.0
+2020-07-17 13:00:50 INFO  ItemController:85 - Please enter the id of the item you would like to delete
+2020-07-17 13:02:08 INFO  CustomerController:37 - id:1 first name:Chris last name:P
+2020-07-17 13:02:08 INFO  CustomerController:37 - id:2 first name:Rhys last name:T
+2020-07-17 13:02:08 INFO  CustomerController:37 - id:3 first name:Nic last name:J
+2020-07-17 13:02:08 INFO  CustomerController:62 - Please enter the id of the customer you would like to update
+2020-07-17 13:02:08 INFO  CustomerController:64 - Please enter a first name
+2020-07-17 13:02:08 INFO  CustomerController:66 - Please enter a last name
+2020-07-17 13:02:08 INFO  CustomerController:69 - Customer Updated
+2020-07-17 13:02:08 INFO  CustomerController:47 - Please enter a first name
+2020-07-17 13:02:08 INFO  CustomerController:49 - Please enter a last name
+2020-07-17 13:02:08 INFO  CustomerController:52 - Customer created
+2020-07-17 13:02:08 INFO  CustomerController:78 - Please enter the id of the customer you would like to delete
+2020-07-17 13:02:08 INFO  ItemController:45 - id:1 item name:item1 item value:10.0
+2020-07-17 13:02:08 INFO  ItemController:45 - id:2 item name:item2 item value:2.0
+2020-07-17 13:02:08 INFO  ItemController:45 - id:3 item name:item3 item value:5.0
+2020-07-17 13:02:09 DEBUG Ims:148 - com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+2020-07-17 13:02:09 DEBUG Ims:148 - java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+2020-07-17 13:02:09 DEBUG Ims:148 - java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.qa.ims.Ims.init(Ims.java:138)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.qa.ims.persistence.Dao.CustomerDaoMysqlTest.aInit(CustomerDaoMysqlTest.java:68)
+2020-07-17 13:02:09 DEBUG Ims:148 - java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2020-07-17 13:02:09 DEBUG Ims:148 - java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2020-07-17 13:02:09 DEBUG Ims:148 - java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2020-07-17 13:02:09 DEBUG Ims:148 - java.base/java.lang.reflect.Method.invoke(Method.java:564)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:77)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:83)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:39)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runners.Suite.runChild(Suite.java:128)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runners.Suite.runChild(Suite.java:27)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+2020-07-17 13:02:09 DEBUG Ims:148 - org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+2020-07-17 13:02:09 DEBUG Ims:148 - com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+2020-07-17 13:02:09 ERROR Ims:150 - Unknown database 'ims_test'
+2020-07-17 13:02:09 DEBUG CustomerDaoMysql:92 - [Ljava.lang.StackTraceElement;@5652f555
+2020-07-17 13:02:09 ERROR CustomerDaoMysql:93 - Unknown database 'ims_test'
+2020-07-17 13:02:09 DEBUG CustomerDaoMysql:59 - [Ljava.lang.StackTraceElement;@1144a55a
+2020-07-17 13:02:09 ERROR CustomerDaoMysql:60 - Unknown database 'ims_test'
+2020-07-17 13:02:09 DEBUG CustomerDaoMysql:73 - [Ljava.lang.StackTraceElement;@1286528d
+2020-07-17 13:02:09 ERROR CustomerDaoMysql:74 - Unknown database 'ims_test'
+2020-07-17 13:02:09 DEBUG CustomerDaoMysql:105 - [Ljava.lang.StackTraceElement;@5767b2af
+2020-07-17 13:02:09 ERROR CustomerDaoMysql:106 - Unknown database 'ims_test'
+2020-07-17 13:02:09 DEBUG CustomerDaoMysql:126 - [Ljava.lang.StackTraceElement;@48b0e701
+2020-07-17 13:02:09 ERROR CustomerDaoMysql:127 - Unknown database 'ims_test'
+2020-07-17 13:02:09 DEBUG CustomerDaoMysql:143 - [Ljava.lang.StackTraceElement;@7fae4d4a
+2020-07-17 13:02:09 ERROR CustomerDaoMysql:144 - Unknown database 'ims_test'
+2020-07-17 13:02:09 DEBUG CustomerDaoMysql:59 - [Ljava.lang.StackTraceElement;@46baf579
+2020-07-17 13:02:09 ERROR CustomerDaoMysql:60 - Unknown database 'ims_test'
+2020-07-17 13:02:09 DEBUG Ims:154 - [Ljava.lang.StackTraceElement;@4f7c0be3
+2020-07-17 13:02:09 ERROR Ims:155 - Unknown database 'ims_test'
+2020-07-17 13:03:57 INFO  CustomerController:37 - id:1 first name:Chris last name:P
+2020-07-17 13:03:57 INFO  CustomerController:37 - id:2 first name:Rhys last name:T
+2020-07-17 13:03:57 INFO  CustomerController:37 - id:3 first name:Nic last name:J
+2020-07-17 13:03:57 INFO  CustomerController:62 - Please enter the id of the customer you would like to update
+2020-07-17 13:03:57 INFO  CustomerController:64 - Please enter a first name
+2020-07-17 13:03:57 INFO  CustomerController:66 - Please enter a last name
+2020-07-17 13:03:57 INFO  CustomerController:69 - Customer Updated
+2020-07-17 13:03:57 INFO  CustomerController:47 - Please enter a first name
+2020-07-17 13:03:57 INFO  CustomerController:49 - Please enter a last name
+2020-07-17 13:03:57 INFO  CustomerController:52 - Customer created
+2020-07-17 13:03:57 INFO  CustomerController:78 - Please enter the id of the customer you would like to delete
+2020-07-17 13:03:57 INFO  ItemController:45 - id:1 item name:item1 item value:10.0
+2020-07-17 13:03:57 INFO  ItemController:45 - id:2 item name:item2 item value:2.0
+2020-07-17 13:03:57 INFO  ItemController:45 - id:3 item name:item3 item value:5.0
+2020-07-17 13:04:44 INFO  CustomerController:37 - id:1 first name:Chris last name:P
+2020-07-17 13:04:44 INFO  CustomerController:37 - id:2 first name:Rhys last name:T
+2020-07-17 13:04:44 INFO  CustomerController:37 - id:3 first name:Nic last name:J
+2020-07-17 13:04:44 INFO  CustomerController:62 - Please enter the id of the customer you would like to update
+2020-07-17 13:04:44 INFO  CustomerController:64 - Please enter a first name
+2020-07-17 13:04:44 INFO  CustomerController:66 - Please enter a last name
+2020-07-17 13:04:44 INFO  CustomerController:69 - Customer Updated
+2020-07-17 13:04:44 INFO  CustomerController:47 - Please enter a first name
+2020-07-17 13:04:44 INFO  CustomerController:49 - Please enter a last name
+2020-07-17 13:04:44 INFO  CustomerController:52 - Customer created
+2020-07-17 13:04:44 INFO  CustomerController:78 - Please enter the id of the customer you would like to delete
+2020-07-17 13:04:44 INFO  ItemController:45 - id:1 item name:item1 item value:10.0
+2020-07-17 13:04:44 INFO  ItemController:45 - id:2 item name:item2 item value:2.0
+2020-07-17 13:04:44 INFO  ItemController:45 - id:3 item name:item3 item value:5.0
+2020-07-17 13:09:08 INFO  CustomerController:37 - id:1 first name:Chris last name:P
+2020-07-17 13:09:08 INFO  CustomerController:37 - id:2 first name:Rhys last name:T
+2020-07-17 13:09:08 INFO  CustomerController:37 - id:3 first name:Nic last name:J
+2020-07-17 13:09:08 INFO  CustomerController:62 - Please enter the id of the customer you would like to update
+2020-07-17 13:09:08 INFO  CustomerController:64 - Please enter a first name
+2020-07-17 13:09:08 INFO  CustomerController:66 - Please enter a last name
+2020-07-17 13:09:08 INFO  CustomerController:69 - Customer Updated
+2020-07-17 13:09:08 INFO  CustomerController:47 - Please enter a first name
+2020-07-17 13:09:08 INFO  CustomerController:49 - Please enter a last name
+2020-07-17 13:09:08 INFO  CustomerController:52 - Customer created
+2020-07-17 13:09:08 INFO  CustomerController:78 - Please enter the id of the customer you would like to delete
+2020-07-17 13:09:08 INFO  ItemController:45 - id:1 item name:item1 item value:10.0
+2020-07-17 13:09:08 INFO  ItemController:45 - id:2 item name:item2 item value:2.0
+2020-07-17 13:09:08 INFO  ItemController:45 - id:3 item name:item3 item value:5.0
+2020-07-17 13:09:18 INFO  CustomerController:37 - id:1 first name:Chris last name:P
+2020-07-17 13:09:18 INFO  CustomerController:37 - id:2 first name:Rhys last name:T
+2020-07-17 13:09:18 INFO  CustomerController:37 - id:3 first name:Nic last name:J
+2020-07-17 13:09:18 INFO  CustomerController:62 - Please enter the id of the customer you would like to update
+2020-07-17 13:09:18 INFO  CustomerController:64 - Please enter a first name
+2020-07-17 13:09:18 INFO  CustomerController:66 - Please enter a last name
+2020-07-17 13:09:18 INFO  CustomerController:69 - Customer Updated
+2020-07-17 13:09:18 INFO  CustomerController:47 - Please enter a first name
+2020-07-17 13:09:18 INFO  CustomerController:49 - Please enter a last name
+2020-07-17 13:09:18 INFO  CustomerController:52 - Customer created
+2020-07-17 13:09:18 INFO  CustomerController:78 - Please enter the id of the customer you would like to delete
+2020-07-17 13:09:18 INFO  ItemController:45 - id:1 item name:item1 item value:10.0
+2020-07-17 13:09:18 INFO  ItemController:45 - id:2 item name:item2 item value:2.0
+2020-07-17 13:09:18 INFO  ItemController:45 - id:3 item name:item3 item value:5.0
+2020-07-17 13:09:31 INFO  Ims:37 - What is your username
+2020-07-17 13:22:41 INFO  CustomerController:37 - id:1 first name:Chris last name:P
+2020-07-17 13:22:41 INFO  CustomerController:37 - id:2 first name:Rhys last name:T
+2020-07-17 13:22:41 INFO  CustomerController:37 - id:3 first name:Nic last name:J
+2020-07-17 13:22:41 INFO  CustomerController:62 - Please enter the id of the customer you would like to update
+2020-07-17 13:22:41 INFO  CustomerController:64 - Please enter a first name
+2020-07-17 13:22:41 INFO  CustomerController:66 - Please enter a last name
+2020-07-17 13:22:41 INFO  CustomerController:69 - Customer Updated
+2020-07-17 13:22:41 INFO  CustomerController:47 - Please enter a first name
+2020-07-17 13:22:41 INFO  CustomerController:49 - Please enter a last name
+2020-07-17 13:22:41 INFO  CustomerController:52 - Customer created
+2020-07-17 13:22:41 INFO  CustomerController:78 - Please enter the id of the customer you would like to delete
+2020-07-17 13:22:41 INFO  ItemController:45 - id:1 item name:item1 item value:10.0
+2020-07-17 13:22:41 INFO  ItemController:45 - id:2 item name:item2 item value:2.0
+2020-07-17 13:22:41 INFO  ItemController:45 - id:3 item name:item3 item value:5.0

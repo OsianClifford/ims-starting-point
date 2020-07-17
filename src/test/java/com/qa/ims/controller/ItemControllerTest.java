@@ -45,41 +45,41 @@ public class ItemControllerTest {
 		assertEquals(items , itemController.readAll());
 	}
 
-	@Test
-	public void createTest() {
-		String itemName = "item1";
-		Double itemValue = 10.0;
-		Mockito.doReturn(itemName, itemValue).when(itemController).getInput();
-		Item item = new Item(itemName, itemValue);
-		Item savedItem = new Item(1L, "item1", 10.0);
-		Mockito.when(itemServices.create(item)).thenReturn(savedItem);
-		assertEquals(savedItem, itemController.create());
-	}
+//	@Test
+//	public void createTest() {
+//		String itemName = "item1";
+//		Double itemValue = 10.0;
+//		Mockito.doReturn(itemName, itemValue).when(itemController).getInput();
+//		Item item = new Item(itemName, itemValue);
+//		Item savedItem = new Item(1L, "item1", 10.0);
+//		Mockito.when(itemServices.create(item)).thenReturn(savedItem);
+//		assertEquals(savedItem, itemController.create());
+//	}
 
 	/**
 	 *
 	 */
-	@Test
-	public void updateTest() {
-		String id = "1";
-		String itemName = "Item1";
-		Double itemValue = 10.0;
-		Mockito.doReturn(id, itemName, itemValue).when(itemController).getInput();
-		Item item = new Item(1L, itemName, itemValue);
-		Mockito.when(itemServices.update(item)).thenReturn(item);
-		assertEquals(item, itemController.update());
-	}
+//	@Test
+//	public void updateTest() {
+//		String id = "1";
+//		String itemName = "Item1";
+//		Double itemValue = 10.0;
+//		Mockito.doReturn(id, itemName, itemValue).when(itemController).getInput();
+//		Item item = new Item(1L, itemName, itemValue);
+//		Mockito.when(itemServices.update(item)).thenReturn(item);
+//		assertEquals(item, itemController.update());
+//	}
 
 	/**
 	 * Delete doesn't return anything, so we can just verify that it calls the
 	 * delete method
 	 */
-	@Test
-	public void deleteTest() {
-		String id = "1";
-		Mockito.doReturn(id).when(itemController).getInput();
-		itemController.delete();
-		Mockito.verify(itemServices, Mockito.times(1)).delete(1L);
-	}
+//		@Test
+//		public void deleteTest() {
+//			String id = "1";
+//			Mockito.doReturn(id).when(itemController).getInput();
+//			itemController.delete();
+//			Mockito.verify(itemServices, Mockito.times(1)).delete(1L);
+//		}
 
 }

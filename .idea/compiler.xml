@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="OsianClifford-20SoftwareJun1" target="14.0.1" />
+      <module name="OsianClifford-20SoftwareJun1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
