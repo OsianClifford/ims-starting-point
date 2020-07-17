@@ -1,0 +1,15 @@
+2020-07-17 11:06:35 INFO  Ims:37 - What is your username
+2020-07-17 11:06:42 INFO  Ims:39 - What is your password
+2020-07-17 11:06:45 INFO  Ims:44 - Which entity would you like to use?
+2020-07-17 11:06:45 INFO  Domain:29 - CUSTOMER: Information about customers
+2020-07-17 11:06:45 INFO  Domain:29 - ITEM: Individual Items
+2020-07-17 11:06:45 INFO  Domain:29 - ORDER: Purchases of items
+2020-07-17 11:06:45 INFO  Domain:29 - SHIPMENT: Shipment of items
+2020-07-17 11:06:45 INFO  Domain:29 - STOP: To close the application
+2020-07-17 11:06:48 INFO  Ims:51 - What would you like to do with customer:
+2020-07-17 11:06:48 INFO  Action:42 - CREATE: To save a new item into the database
+2020-07-17 11:06:48 INFO  Action:42 - READ: To read an item from the database
+2020-07-17 11:06:48 INFO  Action:42 - UPDATE: To change an item already in the database
+2020-07-17 11:06:48 INFO  Action:42 - DELETE: To remove an item from the database
+2020-07-17 11:06:48 INFO  Action:42 - RETURN: To return to domain selection
+2020-07-17 11:10:58 INFO  Ims:37 - What is your username
