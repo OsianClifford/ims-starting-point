@@ -1,0 +1,6 @@
+com\qa\ims\services\CustomerServicesTest.class
+com\qa\ims\persistence\domain\CustomerTest.class
+com\qa\ims\persistence\domain\ItemTest.class
+com\qa\ims\persistence\domain\DomainTest.class
+com\qa\ims\controller\CustomerControllerTest.class
+com\qa\ims\controller\ItemControllerTest.class
